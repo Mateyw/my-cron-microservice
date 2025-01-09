@@ -1,12 +1,13 @@
 {
   "name": "my-cron-microservice",
   "version": "1.0.0",
-  "description": "��#\u0000#\u0000 \u0000D\u0000o\u0000c\u0000u\u0000m\u0000e\u0000n\u0000t\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "Microservice to replicate cron jobs in AWS Lambda",
+  "main": "deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "node infrastructure/deploy.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "aws-sdk": "^2.1364.0"
+  }
 }
